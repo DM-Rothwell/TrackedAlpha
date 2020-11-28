@@ -8,12 +8,12 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemyPrefab;
 
     //Max and Min range for ball to spawn on the X-axis
-    private float spawnXRangeMin = 26.0f;
-    private float spawnXRangeMax = 40.0f;
+    private float spawnXRangeMin = 30.0f;
+    private float spawnXRangeMax = 65.0f;
 
     //Max and Min range for ball to spawn on the Z-axis
-    private float spawnZRangeMin = 52.0f;
-    private float spawnZRangeMax = 78.0f;
+    private float spawnZRangeMin = 15.0f;
+    private float spawnZRangeMax = 70.0f;
 
     // Start is called before the first frame update
     void Start()
