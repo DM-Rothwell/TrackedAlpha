@@ -12,7 +12,7 @@ For my Alpha I used the following assests from the Unity Asset store. Theses all
 
 
 3) Used the standard Assets (for Unity 2018.4): 
-	Standard Assets
+	Standard Assets (for Unity 2018.4)
 	https://assetstore.unity.com/packages/essentials/asset-packs/standard-assets-for-unity-2018-4-32351
 	Deleted files that would not be used.
 
