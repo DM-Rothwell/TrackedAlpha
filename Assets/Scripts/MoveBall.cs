@@ -2,12 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class DestroyEnemy : MonoBehaviour
+public class MoveBall : MonoBehaviour
 {
-    //Declare variables
-    public GameObject enemyPrefab;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +13,6 @@ public class DestroyEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if statement when the ball hits enemy, enemy is destroyed
-        //if (projectile hits enemy prefab) { Destroy projectile}
+        
     }
 }

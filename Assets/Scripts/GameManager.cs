@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 public class GameManager : MonoBehaviour
 {
     //Declare Variables
@@ -14,13 +16,13 @@ public class GameManager : MonoBehaviour
     {
         //UpdateScore(0);
 
-        /*IEnumerator SpawnManager()
+        IEnumerator SpawnManager()
         {
             while (true)
             {
                 UpdateScore(1);
             }//End of while
-        }//end of IEnumerator*/
+        }//end of IEnumerator
     }
 
     // Update is called once per frame
@@ -36,13 +38,20 @@ public class GameManager : MonoBehaviour
     }
 
     //Method to start game when "Play Game" is clicked
-    public void StartGame()
+    public object StartGame()
     {
         gameActive = true;
         score = 0;
 
         //StartCoroutine(SpawnManager());
         UpdateScore(0);
+
+        return StartGame();
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 

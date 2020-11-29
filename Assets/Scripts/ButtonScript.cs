@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ButtonScript : MonoBehaviour
 {
     private Button playButton;
@@ -14,7 +15,7 @@ public class ButtonScript : MonoBehaviour
         playButton = GetComponent<Button>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         
-        playButton.onClick.AddListener(PlayGame);
+        //playButton.onClick.AddListener(StartGame);
     }
 
     // Update is called once per frame
@@ -23,12 +24,11 @@ public class ButtonScript : MonoBehaviour
         
     }
 
-    //Create method for button to disappear when clicked
-    void PlayGame()
+    /*void playGame()
     {
         Debug.Log(playButton.gameObject.name + " was clicked");
-
-    }
+        gameManager.StartGame();
+    }*/
 
 
 }
